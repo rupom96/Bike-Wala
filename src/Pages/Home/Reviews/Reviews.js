@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import { Button, Card } from 'react-bootstrap';
 
 import useReviews from '../../../hooks/useReviews';
@@ -16,7 +17,9 @@ const Reviews = () => {
 
     return (
         <div className="container mt-5 px-5">
-            <h1 id="reviewsid">Reviews:</h1>
+            <ScrollAnimation animateIn="fadeInUp">
+                <h1 id="reviewsid">Reviews:</h1>
+            </ScrollAnimation>
             <div className="card-container px-5 mt-5">
 
                 {reviews.length === 0 &&

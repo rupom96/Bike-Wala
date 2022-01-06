@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 // import { Button, Card } from 'react-bootstrap';
 import useData from '../../../hooks/useData';
 import HomeBike from '../HomeBike/HomeBike';
@@ -12,8 +13,10 @@ const HomeBikes = () => {
     }
 
     return (
-        <div className="mt-5">
-            <h1 id="productsid">Our Products:</h1>
+        <div className="mt-5 pt-5">
+            <ScrollAnimation animateIn="fadeInUp">
+                <h1 id="productsid">Our Products:</h1>
+            </ScrollAnimation>
             <div className="card-container px-5 mt-5">
 
                 {data.length === 0 &&

@@ -1,4 +1,5 @@
 import React from 'react';
+import ScrollAnimation from 'react-animate-on-scroll';
 import { Carousel } from 'react-bootstrap';
 import './Banner.css';
 
@@ -14,8 +15,12 @@ const Banner = () => {
                         alt="First slide"
                     />
                     <Carousel.Caption className="carousel-caption text-left">
-                        <h3 className="head-caption" >Welcome to BikeWala</h3>
-                        <p className="head-para" >A Trusted & Loyal Retailer of Motorbikes</p>
+                        <ScrollAnimation animateIn="fadeInLeft">
+                            <h3 className="head-caption" >Welcome to BikeWala</h3>
+                        </ScrollAnimation>
+                        <ScrollAnimation animateIn="fadeInUp">
+                            <p className="head-para" >A Trusted & Loyal Retailer of Motorbikes</p>
+                        </ScrollAnimation>
                     </Carousel.Caption>
                 </Carousel.Item>
                 <Carousel.Item>
